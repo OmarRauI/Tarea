@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/card-style.css">
+    <title>Card - CSS</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="card-container">
+            <div class="card-body">
+                <div class="card-content">
+                    <svg viewBox="0 0 50 50" </path><></path></svg>
+                    <h1 class="card-title">El Macaco</h1>
+                    <p class="card-description">
+                         Los términos mono y simio son sinónimos en el idioma español,1​ pero en zoología suele hacerse una distinción entre ambos, debido a la influencia del idioma inglés, en el que los términos equivalentes monkey y ape tienen diferentes significados.
+                    </p>
+                </div>
+                 <div class="card-footer">
+                <img src="ape-6522381_640.jpg">
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
+body{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-title{
+    font-family: 'Griffy', cursive;
+    color: black;
+}
+.card-description{
+    font-family: 'Grenze Gotisch', cursive;
+    color: black;
+}
+.ape-6522381_640{
+position: absolute;
+width: 358px;
+height: 412px;
+left: 372px;
+top: 306px;
+
+background: url(ape-6522381_640.jpg);
+}
+.card-body{
+    display: flex;
+    flex-direction: column-reverse;
+    border-bottom: solid 5px #39F66B;
+    padding-bottom: 2em;
+    padding-top: 8em;
+    position: relative;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.card-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+}
